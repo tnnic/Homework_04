@@ -45,7 +45,7 @@ mod tests {
 
     #[test]
     fn test_default_vec3() {
-        assert_eq!(Vec3::new(), Vec3([0; VEC3_LEN]));
+        assert_eq!(Vec3::default(), Vec3([0; VEC3_LEN]));
     }
 
     #[test]

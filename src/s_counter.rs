@@ -27,7 +27,7 @@ mod tests {
 
     #[test]
     fn test_default_signed_counter() {
-        assert_eq!(SignedCounter::new().0, 0);
+        assert_eq!(SignedCounter::default().0, 0);
     }
 
     #[test]

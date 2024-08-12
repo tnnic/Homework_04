@@ -22,7 +22,7 @@ mod tests {
 
     #[test]
     fn test_default_unsigned_counter() {
-        assert_eq!(UnsignedCounter::new().0, 0);
+        assert_eq!(UnsignedCounter::default().0, 0);
     }
     
     #[test]
