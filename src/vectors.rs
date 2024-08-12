@@ -2,7 +2,11 @@ pub const VEC3_LEN: usize = 3;
 
 #[derive(Debug, PartialEq)]
 pub struct Vec3([i32; VEC3_LEN]);
-
+impl Default for Vec3 {
+    fn default() -> Self {
+        Self::new()
+    }
+}
 impl Vec3 {
     // Метод для создания вектора по умолчанию
     pub fn new() -> Self {

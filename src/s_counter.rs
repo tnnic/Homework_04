@@ -1,5 +1,9 @@
 pub struct SignedCounter(isize);
-
+impl Default for SignedCounter {
+    fn default() -> Self {
+        Self::new()
+    }
+}
 impl SignedCounter {
     // Метод для создания счетчика по умолчанию
     pub fn new() -> Self {

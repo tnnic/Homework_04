@@ -2,6 +2,11 @@
 #[derive(Debug)]
 pub struct Pair(i32, i32);
 
+impl Default for Pair {
+    fn default() -> Self {
+        Self::new()
+    }
+}
 impl Pair {
     // Метод для создания пары по умолчанию
     pub fn new() -> Self {
@@ -25,7 +30,7 @@ mod tests {
 
     #[test]
     fn test_default_pair() {
-        assert_eq!(Pair::new(), Pair(0, 0));
+        assert_eq!(Pair::default(), Pair(0, 0));
     }
 
     #[test]

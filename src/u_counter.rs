@@ -1,5 +1,9 @@
 pub struct UnsignedCounter(usize);
-
+impl Default for UnsignedCounter {
+    fn default() -> Self {
+        Self::new()
+    }
+}
 impl UnsignedCounter {
     // Метод для создания счетчика по умолчанию
     pub fn new() -> Self {
